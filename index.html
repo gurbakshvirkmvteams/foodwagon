@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FoodWagon</title>
 
+    <title>FoodWagon</title>
+    <!-- google fonts cdn link  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,34 +15,48 @@
     <link rel="stylesheet" href="style.css">
     <!-- swiper js  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-
 </head>
 
 <body>
-    <header class="">
+    <header>
         <!-- navbar starts here  -->
-        <section class="navbar horizontal-center-align main-container">
-            <div class="logo horizontal-center-align">
-                <a href="index.html">
-                    <img src="assets/logo.svg" alt="logo" /><img src="assets/logo-text.svg" alt="logo" />
-                </a>
+        <section>
+            <div class="navbar horizontal-center-align main-container">
+                <div class="logo horizontal-center-align">
+                    <a href="index.html" class="horizontal-center-align">
+                        <img src="assets/logo.svg" alt="logo" />
+                        <!-- <img src="assets/logo-text.svg" alt="logo" /> -->
+                        <span class="logo-text logo-food">food</span><span class="logo-text logo-wagon">wagon</span>
+                    </a>
+                </div>
+                <div class="horizontal-center-align navbar-center-section">
+                    <div class="horizontal-center-align vertical-center-align"><strong>Deliver to:</strong>
+                        <span class="horizontal-center-align"><img src="assets/location-marker.svg" alt="location-icon"
+                                class="icons-size" /></span>
+                        Current Location
+                        <strong>Mohammadpur Bus Stand, Dhaka</strong>
+                    </div>
+                </div>
+                <div class="navbar-search-wrapper horizontal-center-align">
+                    <div class="horizontal-center-align search-input">
+                        <img src="assets/Search.svg" alt="" class="icons-size" />
+                        <input type="text" placeholder="Search Food">
+                    </div>
+                    <button class="login-btn button-text-bold vertical-center-align ">
+                        <img src="assets/user.svg" alt="user icon" class="icons-size" />Login</button>
+                </div>
+
             </div>
-            <div class="horizontal-center-align navbar-center-section">
+            <div class="horizontal-center-align main-container vertical-center-align mobile-navbar-bottom">
                 <div class="horizontal-center-align vertical-center-align">Deliver to:
-                    <span><img src="assets/location-marker.svg" alt="location-icon" class="icons-size" /></span>
+                    <span class="horizontal-center-align"><img src="assets/location-marker.svg" alt="location-icon"
+                            class="icons-size" /></span>
                     Current Location
                     Mohammadpur Bus Stand, Dhaka
                 </div>
             </div>
-            <div class="navbar-search-wrapper horizontal-center-align">
-                <div class="horizontal-center-align search-input">
-                    <img src="assets/Search.svg" alt="" class="icons-size" />
-                    <input type="text" placeholder="Search Food">
-                </div>
-                <button class="login-btn button-text-bold vertical-center-align ">
-                    <img src="assets/user.svg" alt="user icon" class="icons-size" />Login</button>
-            </div>
         </section>
+
         <section class="hero">
             <div class="hero-wrapper main-container horizontal-center-align">
                 <div class="hero-left vertical-center-align flex-col">
@@ -59,7 +74,7 @@
                                 <span class="horizontal-center-align">
                                     <img src="assets/shopping-bag.svg" alt="shopping-bag" />
                                 </span>
-                                <span class="button-text-bold">Pickup</span>
+                                <span class="button-text-bold hero-pickup-btn">Pickup</span>
                             </button>
                         </div>
                         <div class="hero-input-container-bottom horizontal-center-align">
@@ -70,7 +85,7 @@
                                 class="input-texts hero-input-box" />
                             <button class="horizontal-center-align search-button">
                                 <span class="horizontal-center-align icons-size ">
-                                    <img src="assets/Search.svg" alt="" />
+                                    <img src="assets/white-search-icon.svg" alt="" />
                                 </span>
                                 <span class="button-text-bold">Find Food</span>
                             </button>
@@ -78,9 +93,9 @@
                     </div>
 
                 </div>
-                <div class="hero-right">
+                <!-- <div class="hero-right">
                     <img src="assets/Image Base.png" alt="food-image" />
-                </div>
+                </div> -->
             </div>
         </section>
     </header>
@@ -155,8 +170,8 @@
             </div>
         </section>
         <!-- how does it work section  -->
-        <section>
-            <div class="how-it-work paddingupdown">
+        <section class="how-it-work">
+            <div class=" paddingupdown main-container    ">
                 <div class="section-headings how-it-work-heading">How does it work</div>
                 <div class="how-cards-wrapper flex vertical-center-align">
                     <div class="how-card flex-col horizontal-center-align">
@@ -171,7 +186,8 @@
                     </div>
 
                     <div class="how-card flex-col horizontal-center-align">
-                        <span class="howto-card-icon"><img src="assets/menu 2.svg" alt="location-icon" /></span>
+                        <span class="howto-card-icon"><img src="assets/location-marker.svg"
+                                alt="location-icon" /></span>
                         <div class="flex-col horizontal-center-align how-card-body">
                             <div class="card-headings howto-card-heading">Select location</div>
                             <div class="input-texts howto-card-description text-center">Choose the location where your
@@ -181,7 +197,8 @@
                     </div>
 
                     <div class="how-card flex-col horizontal-center-align">
-                        <span class="howto-card-icon"><img src="assets/Invoice.svg" alt="location-icon" /></span>
+                        <span class="howto-card-icon"><img src="assets/location-marker.svg  "
+                                alt="location-icon" /></span>
                         <div class="flex-col horizontal-center-align how-card-body">
                             <div class="card-headings howto-card-heading">Select location</div>
                             <div class="input-texts howto-card-description text-center">Choose the location where your
@@ -191,7 +208,8 @@
                     </div>
 
                     <div class="how-card flex-col horizontal-center-align">
-                        <span class="howto-card-icon"><img src="assets/donut.svg" alt="location-icon" /></span>
+                        <span class="howto-card-icon"><img src="assets/location-marker.svg"
+                                alt="location-icon" /></span>
                         <div class="flex-col horizontal-center-align how-card-body">
                             <div class="card-headings howto-card-heading">Select location</div>
                             <div class="input-texts howto-card-description text-center">Choose the location where your
@@ -202,87 +220,705 @@
                 </div>
             </div>
         </section>
-
         <!-- popular items section  -->
         <section class="popular-items-section">
-            <section class="main-container paddingupdown ">
+            <div class="main-container paddingupdown ">
                 <div class="section-headings">Popular Items</div>
                 <div class="popular-cards-wrapper swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide popular-card flex-col">
-                            <div class="popular-card-img">
-                                <img src="assets/Rectangle 336 (1).png" alt="food-image" />
+                        <div class="swiper-slide">
+                            <div class=" popular-card flex-col">
+                                <div class="popular-card-img">
+                                    <img src="assets/Rectangle 336.png" alt="food-image" />
+                                </div>
+                                <div class="card-headings">Cheese Burger</div>
+                                <div class="flex horizontal-center-align popular-card-description"><span
+                                        class="horizontal-center-align"><img src="assets/location-marker.svg"
+                                            alt="location-icon" /></span><span
+                                        class="card-sub-headings text-primary-color">Burger
+                                        Arena</span>
+                                </div>
+                                <div class="card-headings">$3.88</div>
+                                <button class="popular-card-button button-text-bold">Order Now</button>
                             </div>
-                            <div class="card-headings">Cheese Burger</div>
-                            <div class="flex horizontal-center-align popular-card-description"><span
-                                    class="horizontal-center-align"><img src="assets/location-marker.svg"
-                                        alt="location-icon" /></span><span class="card-sub-headings">Burger Arena</span>
-                            </div>
-                            <div class="card-headings">$3.88</div>
-                            <button class="popular-card-button button-text-bold">Order Now</button>
                         </div>
-
-                        <div class="swiper-slide popular-card flex-col">
-                            <div class="popular-card-img">
-                                <img src="assets/Rectangle 336 (1).png" alt="food-image" />
+                        <div class="swiper-slide">
+                            <div class=" popular-card flex-col">
+                                <div class="popular-card-img">
+                                    <img src="assets/Rectangle 336 (1).png" alt="food-image" />
+                                </div>
+                                <div class="card-headings">Cheese Burger</div>
+                                <div class="flex horizontal-center-align popular-card-description"><span
+                                        class="horizontal-center-align"><img src="assets/location-marker.svg"
+                                            alt="location-icon" /></span><span
+                                        class="card-sub-headings text-primary-color">Burger
+                                        Arena</span>
+                                </div>
+                                <div class="card-headings">$3.88</div>
+                                <button class="popular-card-button button-text-bold">Order Now</button>
                             </div>
-                            <div class="card-headings">Cheese Burger</div>
-                            <div class="flex horizontal-center-align popular-card-description"><span
-                                    class="horizontal-center-align"><img src="assets/location-marker.svg"
-                                        alt="location-icon" /></span><span class="card-sub-headings">Burger Arena</span>
-                            </div>
-                            <div class="card-headings">$3.88</div>
-                            <button class="popular-card-button button-text-bold">Order Now</button>
                         </div>
-
-                        <div class="swiper-slide popular-card flex-col">
-                            <div class="popular-card-img">
-                                <img src="assets/Rectangle 336 (1).png" alt="food-image" />
+                        <div class="swiper-slide">
+                            <div class=" popular-card flex-col">
+                                <div class="popular-card-img">
+                                    <img src="assets/Rectangle 336 (2).png" alt="food-image" />
+                                </div>
+                                <div class="card-headings">Cheese Burger</div>
+                                <div class="flex horizontal-center-align popular-card-description"><span
+                                        class="horizontal-center-align"><img src="assets/location-marker.svg"
+                                            alt="location-icon" /></span><span
+                                        class="card-sub-headings text-primary-color">Burger
+                                        Arena</span>
+                                </div>
+                                <div class="card-headings">$3.88</div>
+                                <button class="popular-card-button button-text-bold">Order Now</button>
                             </div>
-                            <div class="card-headings">Cheese Burger</div>
-                            <div class="flex horizontal-center-align popular-card-description"><span
-                                    class="horizontal-center-align"><img src="assets/location-marker.svg"
-                                        alt="location-icon" /></span><span class="card-sub-headings">Burger Arena</span>
-                            </div>
-                            <div class="card-headings">$3.88</div>
-                            <button class="popular-card-button button-text-bold">Order Now</button>
                         </div>
-
-                        <div class="swiper-slide popular-card flex-col">
-                            <div class="popular-card-img">
-                                <img src="assets/Rectangle 336 (1).png" alt="food-image" />
+                        <div class="swiper-slide">
+                            <div class=" popular-card flex-col">
+                                <div class="popular-card-img">
+                                    <img src="assets/Rectangle 336 (3).png" alt="food-image" />
+                                </div>
+                                <div class="card-headings">Cheese Burger</div>
+                                <div class="flex horizontal-center-align popular-card-description"><span
+                                        class="horizontal-center-align"><img src="assets/location-marker.svg"
+                                            alt="location-icon" /></span><span
+                                        class="card-sub-headings text-primary-color">Burger
+                                        Arena</span>
+                                </div>
+                                <div class="card-headings">$3.88</div>
+                                <button class="popular-card-button button-text-bold">Order Now</button>
                             </div>
-                            <div class="card-headings">Cheese Burger</div>
-                            <div class="flex horizontal-center-align popular-card-description"><span
-                                    class="horizontal-center-align"><img src="assets/location-marker.svg"
-                                        alt="location-icon" /></span><span class="card-sub-headings">Burger Arena</span>
-                            </div>
-                            <div class="card-headings">$3.88</div>
-                            <button class="popular-card-button button-text-bold">Order Now</button>
                         </div>
-
-                        <div class="swiper-slide popular-card flex-col">
-                            <div class="popular-card-img">
-                                <img src="assets/Rectangle 336 (1).png" alt="food-image" />
+                        <div class="swiper-slide">
+                            <div class=" popular-card flex-col">
+                                <div class="popular-card-img">
+                                    <img src="assets/Rectangle 336 (4).png" alt="food-image" />
+                                </div>
+                                <div class="card-headings">Cheese Burger</div>
+                                <div class="flex horizontal-center-align popular-card-description"><span
+                                        class="horizontal-center-align"><img src="assets/location-marker.svg"
+                                            alt="location-icon" /></span><span
+                                        class="card-sub-headings text-primary-color">Burger
+                                        Arena</span>
+                                </div>
+                                <div class="card-headings">$3.88</div>
+                                <button class="popular-card-button button-text-bold">Order Now</button>
                             </div>
-                            <div class="card-headings">Cheese Burger</div>
-                            <div class="flex horizontal-center-align popular-card-description"><span
-                                    class="horizontal-center-align"><img src="assets/location-marker.svg"
-                                        alt="location-icon" /></span><span class="card-sub-headings">Burger Arena</span>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class=" popular-card flex-col">
+                                <div class="popular-card-img">
+                                    <img src="assets/Rectangle 336 (1).png" alt="food-image" />
+                                </div>
+                                <div class="card-headings">Cheese Burger</div>
+                                <div class="flex horizontal-center-align popular-card-description"><span
+                                        class="horizontal-center-align"><img src="assets/location-marker.svg"
+                                            alt="location-icon" /></span><span
+                                        class="card-sub-headings text-primary-color">Burger
+                                        Arena</span>
+                                </div>
+                                <div class="card-headings">$3.88</div>
+                                <button class="popular-card-button button-text-bold">Order Now</button>
                             </div>
-                            <div class="card-headings">$3.88</div>
-                            <button class="popular-card-button button-text-bold">Order Now</button>
                         </div>
                     </div>
                 </div>
-            </section>
+                <div class="swiper-btn-container flex">
+                    <button class="swiper-btn swiper-btn-left  vertical-center-align">
+                        <span class="horizontal-center-align "><img src="assets/arrow-left.svg" alt="" /></span>
+                    </button>
+                    <button class="swiper-btn swiper-btn-right vertical-center-align    ">
+                        <span class="horizontal-center-align"><img src="assets/arrow-right.svg" alt="" /></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- featured-restaurant-section  -->
+        <section class="main-container">
+            <div class="section-headings">Featured Restaurants</div>
+            <!-- cards-wrapper  -->
+            <div class="featured-restaurant-cards-wrapper">
+                <!-- cards  -->
+                <div class="discount-card flex-col featured-card">
+                    <div class="discount-card-top featured-card-top">
+                        <img src="assets/egg.png" alt="food-image" />
+                        <div class="featured-card-tag-section flex">
+                            <div class="featured-card-tag featured-card-tag-left flex horizontal-center-align">
+                                <span class="horizontal-center-align"><img src="assets/tag.svg" alt="tag-icon" /></span>
+                                <span class="card-headings">10% off</span>
+                            </div>
+                            <div class="featured-card-tag featured-card-tag-right flex horizontal-center-align">
+                                <span class="horizontal-center-align"><img src="assets/clock.svg" alt="clock"></span>
+                                <span class="card-headings">Fast</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical-center-align featured-card-bottom flex-col">
+                        <div class="featured-card-middle flex horizontal-center-align">
+                            <img src="assets/Property 1=8.png" alt="card-image-icon" />
+                            <div class="featured-card-bottom-body">
+                                <div class="card-headings">Foodworld</div>
+                                <div class="horizontal-center-align popular-card-description">
+                                    <span class="horizontal-center-align">
+                                        <img src="assets/star.svg" alt="" />
+                                    </span>
+                                    <span class="text-primary-color card-sub-headings">20</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="featured-card-btn featured-card-yellow card-headings">Opens Tomorrow</button>
+                    </div>
+                </div>
+
+                <div class="discount-card flex-col featured-card">
+                    <div class="discount-card-top featured-card-top">
+                        <img src="assets/Image (4).png" alt="food-image" />
+                        <div class="featured-card-tag-section flex">
+                            <div class="featured-card-tag featured-card-tag-left flex horizontal-center-align">
+                                <span class="horizontal-center-align"><img src="assets/tag.svg" alt="tag-icon" /></span>
+                                <span class="card-headings">10% off</span>
+                            </div>
+                            <div class="featured-card-tag featured-card-tag-right flex horizontal-center-align">
+                                <span class="horizontal-center-align"><img src="assets/clock.svg" alt="clock"></span>
+                                <span class="card-headings">Fast</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical-center-align featured-card-bottom flex-col">
+                        <div class="featured-card-middle flex horizontal-center-align">
+                            <img src="assets/Image (11).png" alt="card-image-icon" />
+                            <div class="featured-card-bottom-body">
+                                <div class="card-headings">Pizzahub</div>
+                                <div class="horizontal-center-align popular-card-description">
+                                    <span class="horizontal-center-align">
+                                        <img src="assets/star.svg" alt="" />
+                                    </span>
+                                    <span class="text-primary-color card-sub-headings">20</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="featured-card-btn featured-card-yellow card-headings">Opens Tomorrow</button>
+                    </div>
+                </div>
+
+                <div class="discount-card flex-col featured-card">
+                    <div class="discount-card-top featured-card-top">
+                        <img src="assets/Image (5).png" alt="food-image" />
+                        <div class="featured-card-tag-section flex">
+                            <div class="featured-card-tag featured-card-tag-left flex horizontal-center-align">
+                                <span class="horizontal-center-align"><img src="assets/tag.svg" alt="tag-icon" /></span>
+                                <span class="card-headings">10% off</span>
+                            </div>
+                            <div class="featured-card-tag featured-card-tag-right flex horizontal-center-align">
+                                <span class="horizontal-center-align"><img src="assets/clock.svg" alt="clock"></span>
+                                <span class="card-headings">Fast</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical-center-align featured-card-bottom flex-col">
+                        <div class="featured-card-middle flex horizontal-center-align">
+                            <img src="assets/Property 1=6.png" alt="card-image-icon" />
+                            <div class="featured-card-bottom-body">
+                                <div class="card-headings">Donuts hut</div>
+                                <div class="horizontal-center-align popular-card-description">
+                                    <span class="horizontal-center-align">
+                                        <img src="assets/star.svg" alt="" />
+                                    </span>
+                                    <span class="text-primary-color card-sub-headings">20</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="featured-card-btn featured-card-green card-headings">Open Now</button>
+                    </div>
+                </div>
+
+                <div class="discount-card flex-col featured-card">
+                    <div class="discount-card-top featured-card-top">
+                        <img src="assets/Image (6).png" alt="food-image" />
+                        <div class="featured-card-tag-section flex">
+                            <div class="featured-card-tag featured-card-tag-left flex horizontal-center-align">
+                                <span class="horizontal-center-align"><img src="assets/tag.svg" alt="tag-icon" /></span>
+                                <span class="card-headings">15% off</span>
+                            </div>
+                            <div class="featured-card-tag featured-card-tag-right flex horizontal-center-align">
+                                <span class="horizontal-center-align"><img src="assets/clock.svg" alt="clock"></span>
+                                <span class="card-headings">Fast</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical-center-align featured-card-bottom flex-col">
+                        <div class="featured-card-middle flex horizontal-center-align">
+                            <img src="assets/Property 1=7.png" alt="card-image-icon" />
+                            <div class="featured-card-bottom-body">
+                                <div class="card-headings">Ruby Tuesday</div>
+                                <div class="horizontal-center-align popular-card-description">
+                                    <span class="horizontal-center-align">
+                                        <img src="assets/star.svg" alt="" />
+                                    </span>
+                                    <span class="text-primary-color card-sub-headings">50</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="featured-card-btn featured-card-green  card-headings">Open Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- cards row 2  -->
+            <div class="featured-restaurant-cards-wrapper">
+                <!-- cards  -->
+                <div class="discount-card flex-col featured-card">
+                    <div class="discount-card-top featured-card-top">
+                        <img src="assets/Image (7).png" alt="food-image" />
+                        <div class="featured-card-tag-section flex">
+                            <div class="featured-card-tag featured-card-tag-left flex horizontal-center-align">
+                                <span class="horizontal-center-align"><img src="assets/tag.svg" alt="tag-icon" /></span>
+                                <span class="card-headings">10% off</span>
+                            </div>
+                            <div class="featured-card-tag featured-card-tag-right flex horizontal-center-align">
+                                <span class="horizontal-center-align"><img src="assets/clock.svg" alt="clock"></span>
+                                <span class="card-headings">Fast</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical-center-align featured-card-bottom flex-col">
+                        <div class="featured-card-middle flex horizontal-center-align">
+                            <img src="assets/Property 1=4.png" alt="card-image-icon" />
+                            <div class="featured-card-bottom-body">
+                                <div class="card-headings">Foodworld</div>
+                                <div class="horizontal-center-align popular-card-description">
+                                    <span class="horizontal-center-align">
+                                        <img src="assets/star.svg" alt="" />
+                                    </span>
+                                    <span class="text-primary-color card-sub-headings">26</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="featured-card-btn featured-card-green  card-headings">Open Now</button>
+                    </div>
+                </div>
+
+                <div class="discount-card flex-col featured-card">
+                    <div class="discount-card-top featured-card-top">
+                        <img src="assets/Image (8).png" alt="food-image" />
+                        <div class="featured-card-tag-section flex">
+                            <div class="featured-card-tag featured-card-tag-left flex horizontal-center-align">
+                                <span class="horizontal-center-align"><img src="assets/tag.svg" alt="tag-icon" /></span>
+                                <span class="card-headings">10% off</span>
+                            </div>
+                            <div class="featured-card-tag featured-card-tag-right flex horizontal-center-align">
+                                <span class="horizontal-center-align"><img src="assets/clock.svg" alt="clock"></span>
+                                <span class="card-headings">Fast</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical-center-align featured-card-bottom flex-col">
+                        <div class="featured-card-middle flex horizontal-center-align">
+                            <img src="assets/Property 1=5.png" alt="card-image-icon" />
+                            <div class="featured-card-bottom-body">
+                                <div class="card-headings">Kuakata Fried Chicken</div>
+                                <div class="horizontal-center-align popular-card-description">
+                                    <span class="horizontal-center-align">
+                                        <img src="assets/star.svg" alt="" />
+                                    </span>
+                                    <span class="text-primary-color card-sub-headings">20</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="featured-card-btn featured-card-green  card-headings">Open Now</button>
+                    </div>
+                </div>
+
+                <div class="discount-card flex-col featured-card">
+                    <div class="discount-card-top featured-card-top">
+                        <img src="assets/Image (9).png" alt="food-image" />
+                        <div class="featured-card-tag-section flex">
+                            <div class="featured-card-tag featured-card-tag-left flex horizontal-center-align">
+                                <span class="horizontal-center-align"><img src="assets/tag.svg" alt="tag-icon" /></span>
+                                <span class="card-headings">10% off</span>
+                            </div>
+                            <div class="featured-card-tag featured-card-tag-right flex horizontal-center-align">
+                                <span class="horizontal-center-align"><img src="assets/clock.svg" alt="clock"></span>
+                                <span class="card-headings">Fast</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical-center-align featured-card-bottom flex-col">
+                        <div class="featured-card-middle flex horizontal-center-align">
+                            <img src="assets/Image (12).png" alt="card-image-icon" />
+                            <div class="featured-card-bottom-body">
+                                <div class="card-headings">Red Square</div>
+                                <div class="horizontal-center-align popular-card-description">
+                                    <span class="horizontal-center-align">
+                                        <img src="assets/star.svg" alt="" />
+                                    </span>
+                                    <span class="text-primary-color card-sub-headings">45</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="featured-card-btn featured-card-green  card-headings">Open Now</button>
+                    </div>
+                </div>
+
+                <div class="discount-card flex-col featured-card">
+                    <div class="discount-card-top featured-card-top">
+                        <img src="assets/Image (10).png" alt="food-image" />
+                        <div class="featured-card-tag-section flex">
+                            <div class="featured-card-tag featured-card-tag-left flex horizontal-center-align">
+                                <span class="horizontal-center-align"><img src="assets/tag.svg" alt="tag-icon" /></span>
+                                <span class="card-headings">15% off</span>
+                            </div>
+                            <div class="featured-card-tag featured-card-tag-right flex horizontal-center-align">
+                                <span class="horizontal-center-align"><img src="assets/clock.svg" alt="clock"></span>
+                                <span class="card-headings">Fast</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vertical-center-align featured-card-bottom flex-col">
+                        <div class="featured-card-middle flex horizontal-center-align">
+                            <img src="assets/Property 1=3.png" alt="card-image-icon" />
+                            <div class="featured-card-bottom-body">
+                                <div class="card-headings">Taco bell</div>
+                                <div class="horizontal-center-align popular-card-description">
+                                    <span class="horizontal-center-align">
+                                        <img src="assets/star.svg" alt="" />
+                                    </span>
+                                    <span class="text-primary-color card-sub-headings">35</span>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="featured-card-btn  featured-card-green card-headings">Open Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="vertical-center-align featured-card-button-container">
+                <button class=" popular-card-button featured-card-view-all-btn horizontal-center-align">
+                    <span class="button-text-bold">View all</span>
+                    <span class="horizontal-center-align button-arrow-icon"><img src="assets/arrow-right.svg"
+                            alt="" /></span>
+                </button>
+            </div>
+        </section>
+        <!-- search by food section  -->
+        <section class=" paddingupdown search-by-food">
+            <div class="container main-container">
+                <div class="flex horizontal-center-align search-food-head">
+                    <div class="section-headings">Search by Food</div>
+
+                    <div class="flex search-food-head-right">
+                        <button class="flex horizontal-center-align search-food-view-all-btn">
+                            <span class="button-text-bold">View all</span>
+                            <span class="horizontal-center-align button-arrow-icon">
+                                <img src="assets/yellowarrow-right.png" alt="" />
+                            </span>
+                        </button>
+                        <button class="swiper-btn search-btn-left  vertical-center-align search-food-btns">
+                            <span class="horizontal-center-align "><img src="assets/arrow-left.svg" alt="" /></span>
+                        </button>
+                        <button class="swiper-btn search-btn-right vertical-center-align search-food-btns">
+                            <span class="horizontal-center-align"><img src="assets/arrow-right.svg" alt="" /></span>
+                        </button>
+                    </div>
+                </div>
+                <!-- cards wrapper  -->
+                <div class="search-food-cards-wrapper searchswiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide search-food-card flex flex-col">
+                            <div class="search-food-img"><img src="assets/pizza.png" alt="food-image" /></div>
+                            <div class="card-headings vertical-center-align">Pizza</div>
+                        </div>
+
+                        <div class="swiper-slide search-food-card flex flex-col">
+                            <div class="search-food-img"><img src="assets/burger.png" alt="food-image" /></div>
+                            <div class="card-headings vertical-center-align">Burger</div>
+                        </div>
+
+                        <div class="swiper-slide search-food-card flex flex-col">
+                            <div class="search-food-img"><img src="assets/noodle.png" alt="food-image" /></div>
+                            <div class="card-headings vertical-center-align">Noodles</div>
+                        </div>
+
+                        <div class="swiper-slide search-food-card flex flex-col">
+                            <div class="search-food-img"><img src="assets/sandwich.png" alt="food-image" /></div>
+                            <div class="card-headings vertical-center-align">Sandwich</div>
+                        </div>
+
+                        <div class="swiper-slide search-food-card flex flex-col">
+                            <div class="search-food-img"><img src="assets/chowmein.png" alt="food-image" /></div>
+                            <div class="card-headings vertical-center-align">Chowmein</div>
+                        </div>
+
+                        <div class="swiper-slide search-food-card flex flex-col">
+                            <div class="search-food-img"><img src="assets/steak.png" alt="food-image" /></div>
+                            <div class="card-headings vertical-center-align">Steak</div>
+                        </div>
+
+                        <div class="swiper-slide search-food-card flex flex-col">
+                            <div class="search-food-img"><img src="assets/burger.png" alt="food-image" /></div>
+                            <div class="card-headings vertical-center-align">Burger</div>
+                        </div>
+                        <div class="swiper-slide search-food-card flex flex-col">
+                            <div class="search-food-img"><img src="assets/sandwich.png" alt="food-image" /></div>
+                            <div class="card-headings vertical-center-align">Sandwich</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- discounts tracking delivery section  -->
+        <section class=" paddingupdown features-section-container">
+            <div class="main-container features-section-wrapper">
+                <div class="features-section  flex horizontal-center-align">
+                    <div class="flex horizontal-center-align discounts-icon-container">
+                        <span class="feature-icon"><img src="assets/location-tag.svg" alt="" /></span>
+                        <div class="features-section-heading flex-col vertical-center-align">
+                            <div>Daily</div>
+                            <div>Discounts</div>
+                        </div>
+                    </div>
+                    <span class="line"><img src="assets/HR.svg" alt="" /></span>
+                    <div class="flex horizontal-center-align discounts-icon-container">
+                        <span class="feature-icon"><img src="assets/percent-tag.svg" alt="" /></span>
+                        <div class="features-section-heading flex-col vertical-center-align">
+                            <div>Live</div>
+                            <div>Tracing</div>
+                        </div>
+                    </div>
+                    <span class="line"><img src="assets/HR.svg" alt="" /></span>
+
+                    <div class="flex horizontal-center-align discounts-icon-container">
+                        <span class="feature-icon"><img src="assets/clock-tag.svg" alt="" /></span>
+                        <div class="features-section-heading flex-col vertical-center-align">
+                            <div>Quick</div>
+                            <div>Delivery</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- install-app app-info section  -->
+        <section class="app-info">
+            <div class="main-container">
+                <div class="app-info-container">
+                    <div class="app-info-left">
+                        <img src="assets/mobiles.png" alt="">
+                    </div>
+                    <div class="app-info-right flex-col vertical-center-align">
+                        <div class="app-info-heading ">Install the app</div>
+                        <div class="input-texts">It's never been easier to order food. Look for the finest
+                            discounts and you'll be lost in a
+                            world of delectable food.</div>
+                        <div class="flex app-buttons-container">
+                            <button class="flex horizontal-center-align app-buttons">
+                                <span class=" app-btn-icon">
+                                    <img src="assets/playstore.svg" alt="playstore" />
+                                </span>
+                                <div class="appbtn-texts-container">
+                                    <div class="appbtn-heading">GET IT ON</div>
+                                    <div class="app-btn-description">Google Play</div>
+                                </div>
+                            </button>
+                            <button class="flex horizontal-center-align app-buttons">
+                                <span class=" app-btn-icon">
+                                    <img src="assets/Apple logo.svg" alt="Apple logo" />
+                                </span>
+                                <div class="appbtn-texts-container">
+                                    <div class="appbtn-heading">GET IT ON</div>
+                                    <div class="app-btn-description">App Store</div>
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- deals-section  -->
+        <section class="main-container paddingupdown">
+            <div class="deals-section-wrapper paddingupdown flex-col">
+                <div class="deals-section-card flex">
+                    <div class="deals-section-card-text-container">
+                        <div class="deals-section-card-texts">
+                            <div class="section-headings">Best deals<span class="featured-card-highlight-text"> Crispy
+                                    Sandwiches</span></div>
+                            <div class="cards-paratext">Enjoy the large size of sandwiches. Complete
+                                perfect slice of sandwiches.</div>
+                        </div>
+                        <button class="popular-card-button deals-button horizontal-center-align vertical-center-align">
+                            <span class="button-text-bold">PROCEED TO ORDER</span>
+                            <span class="button-arrow-icon vertical-center-align horizontal-center-align"><img
+                                    src="assets/arrow-right.svg" alt=""></span>
+                        </button>
+                    </div>
+                    <div class="deals-section-img">
+                        <img src="assets/deals-section1.png" alt="food-image" />
+                    </div>
+                </div>
+
+                <div class="deals-section-card flex">
+                    <div class="deals-section-card-text-container">
+                        <div class="deals-section-card-texts">
+                            <div class="section-headings">Celebrate parties
+                                with <span class="featured-card-highlight-text">Fried Chicken</span>
+                            </div>
+                            <div class="cards-paratext">Get the best fried chicken smeared with a lip smacking lemon
+                                chili flavor. Check out
+                                best deals for fried chicken.</div>
+                        </div>
+                        <button class="popular-card-button deals-button horizontal-center-align vertical-center-align">
+                            <span class="button-text-bold">PROCEED TO ORDER</span>
+                            <span class="button-arrow-icon vertical-center-align horizontal-center-align"><img
+                                    src="assets/arrow-right.svg" alt=""></span>
+                        </button>
+                    </div>
+                    <div class="deals-section-img">
+                        <img src="assets/deals-section2.png" alt="food-image" />
+                    </div>      
+                </div>
+
+                <div class="deals-section-card flex">
+                    <div class="deals-section-card-text-container">
+                        <div class="deals-section-card-texts">
+                            <div class="section-headings">Wanna eat hot
+                                & spicy <span class="featured-card-highlight-text">Pizza?</span></div>
+                            <div class="cards-paratext">Pair up with a friend and enjoy the
+                                hot and crispy pizza pops. Try it
+                                with the best deals.</div>
+                        </div>
+                        <button
+                            class="popular-card-button deals-button flex horizontal-center-align vertical-center-align">
+                            <span class="button-text-bold">PROCEED TO ORDER</span>
+                            <span class="button-arrow-icon vertical-center-align horizontal-center-align"><img
+                                    src="assets/arrow-right.svg" alt=""></span>
+                        </button>
+                    </div>
+                    <div class="deals-section-img">
+                        <img src="assets/deals-section3.png " alt="food-image" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- cta-section  -->
+        <section class="cta-section">
+            <div class="cta-wrapper main-container paddingupdown">
+                <div class="cta-section-heading">Are you ready to order with the best deals?</div>
+                <div class="vertical-center-align">
+                    <button class="popular-card-button flex horizontal-center-align cta-button">
+                        <span class="button-text-bold">PROCEED TO ORDER</span>
+                        <span class="button-arrow-icon vertical-center-align horizontal-center-align"><img
+                                src="assets/arrow-right.svg" alt=""></span>
+                    </button>
+                </div>
+            </div>
         </section>
     </section>
+    <footer class="footer">
+       <div class="footer-container">
+         <div class="footer-section-top main-container">
+            <div class="card-headings footer-section-heading ">Our top cities</div>
+            <div class="footer-wrapper input-texts ">
+                <ul class="flex-col">
+                    <li><a href="">San Francisco</a></li>
+                    <li><a href="">Miami</a></li>
+                    <li><a href="">San Diego</a></li>
+                    <li><a href="">East Bay</a></li>
+                    <li><a href="">Long Beach</a></li>
+                </ul>
+                <ul class="flex-col">
+                    <li><a href="">Los Angeles</a></li>
+                    <li><a href="">Washington DC</a></li>
+                    <li><a href="">Seattle</a></li>
+                    <li><a href="">Portland</a></li>
+                    <li><a href="">Nashville</a></li>
+                </ul>
+                <ul class="flex-col">
+                    <li><a href="">New York City</a></li>
+                    <li><a href="">Orange County</a></li>
+                    <li><a href="">Atlanta</a></li>
+                    <li><a href="">Charlotte</a></li>
+                    <li><a href="">Denver</a></li>
+                </ul>
+                <ul class="flex-col">
+                    <li><a href="">Chicago</a></li>
+                    <li><a href="">Phoenix</a></li>
+                    <li><a href="">Las Vegas</a></li>
+                    <li><a href="">Sacramento</a></li>
+                    <li><a href="">Oklahoma City</a></li>
+                </ul>
+                <ul class="flex-col">
+                    <li><a href="">Columbus</a></li>
+                    <li><a href="">New Mexico</a></li>
+                    <li><a href="">Albuquerque</a></li>
+                    <li><a href="">Sacramento</a></li>
+                    <li><a href="">New Orleans</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-section-bottom main-container flex">
+            <div class="footer-section-bottom-left">
+                <div class="footer-bottom-lists input-texts ">
+                    <div class="card-headings footer-section-heading ">Company</div>
+                    <ul class="flex-col">
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Team</a></li>
+                        <li><a href="">Careers</a></li>
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom-lists input-texts ">
+                    <div class="card-headings footer-section-heading ">Contact</div>
+                    <ul class="flex-col">
+                        <li><a href="">Help & Support</a></li>
+                        <li><a href="">Partner with Us</a></li>
+                        <li><a href="">Ride with us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-bottom-lists input-texts ">
+                    <div class="card-headings footer-section-heading ">Legal</div>
+                    <ul class="flex-col">
+                        <li><a href="">Terms & Conditions</a></li>
+                        <li><a href="">Refund & Cancellation</a></li>
+                        <li><a href="">Privacy Policy</a></li>
+                        <li><a href="">Cookie Policy    </a></li>
+                    </ul>
+                </div>
+                <div>
+                </div>
+            </div>
+            <div class="footer-section-bottom-right flex-col">
+                <div class="button-text-bold footer-section-bottom-right-heading">Follow Us</div>
+                <div class="footer-icons">
+                    <span><a href=""><img src="assets/1.svg" alt="instagram-icon" /></a></span>
+                    <span><a href=""><img src="assets/2.svg" alt="Facebook-icon" /></a></span>
+                    <span><a href=""><img src="assets/3.svg" alt="Twitter-icon" /></a></span>
+                </div>
+                <div class="button-text-bold footer-section-bottom-right-heading">Receive exclusive offers in your
+                    mailbox</div>
+                <div class="footer-input-section horizontal-center-align">
+                    <span class="flex horizontal-center-align">
+                        <img src="assets/envelope.svg" alt="envelope" />
+                    </span>
+                    <input type="text" placeholder="Enter Your email">
+                    <button class="button-text-bold footer-subscribe-btn">Subscribe</button>
+                </div>
+            </div>
+        </div>
+       </div>
+        <div class="main-container flex copyright-section">
+            <div class="copyright-section-text">All rights Reserved</div>
+            <div class="copyright-section-text">&#169; </div>
+            <div class="copyright-section-text copyright-section-companyname">Your Company, 2021</div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
-            slidesPerView: 3,
-            spaceBetween: 50,
+            slidesPerView: 1,
+            spaceBetween: 10,
             direction: 'horizontal',
             loop: true,
             pagination: {
@@ -291,11 +927,62 @@
             },
             // Navigation arrows
             navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
+                nextEl: '.swiper-btn-right',
+                prevEl: '.swiper-btn-left',
             },
+            breakpoints: {
+                // When window width is >= 480px
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 5
+                },
+                // When window width is >= 768px
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+                // When window width is >= 1024px
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 40
+                }
+            }
         });
 
+        // search by food section swiper 
+        const searchswiper = new Swiper('.searchswiper', {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            direction: 'horizontal',
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            // Navigation arrows
+            navigation: {
+
+                nextEl: '.search-btn-right',
+                prevEl: '.search-btn-left',
+            },
+            breakpoints: {
+
+                480: {
+                    slidesPerView: 2,
+                    spaceBetween: 10
+                },
+                // When window width is >= 768px
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 30
+                },
+                // When window width is >= 1024px
+                1024: {
+                    slidesPerView: 6,
+                    spaceBetween: 40
+                }
+            }
+        });
     </script>
 </body>
 
