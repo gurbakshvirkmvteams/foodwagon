@@ -164,7 +164,7 @@ a,
     padding: 14px 24px;
     gap: 10px;
     color: var(--warning-color);
-    box-shadow:0px 20px 40px 0px rgba(255, 174, 0, 0.29),0px 5px 10px 0px rgba(255, 174, 0, 0.26);
+    box-shadow: 0px 20px 40px 0px rgba(255, 174, 0, 0.29), 0px 5px 10px 0px rgba(255, 174, 0, 0.26);
     background-color: white;
     border: 1px solid transparent;
     transition: 0.1s ease;
@@ -179,7 +179,7 @@ a,
 .navbar-center-section div,
 .logo,
 .navbar-search-wrapper {
-    gap: 12px;
+    gap: 8px;
 }
 
 .search-input input {
@@ -187,6 +187,8 @@ a,
     font-family: var(--font-primary);
     font-weight: var(--primary-font-weight);
     font-size: 18px;
+    max-width: 120px;
+    color: #424242  ;
 }
 
 .hero {
@@ -1241,8 +1243,12 @@ a,
 
 @media (max-width:620px) {
     .footer-section-top {
-        padding: 60px 0;
+        padding: 60px 20px;
         border-bottom: 1px solid #424242;
+    }
+
+    .footer-section-top {
+        padding-left: 20px;
     }
 
     .footer-container {
@@ -1339,6 +1345,10 @@ a,
     }
 
     .footer-section-bottom {
+        margin-inline: 0px;
+    }
+
+    .footer-section-bottom {
         flex-wrap: wrap;
     }
 
@@ -1359,6 +1369,28 @@ a,
 }
 
 @media (max-width:390px) {
+    .logo-text {
+        font-size: 24px;
+    }
+
+    .login-btn {
+        border-radius: 8px;
+        padding: 8px 16px;
+    }
+
+    .main-container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .logo-food {
+        padding-left: 5px;
+    }
+
+    .hero-input-container-top {
+        flex-wrap: wrap;
+    }
+
     .features-section {
         flex-direction: column;
     }
@@ -1366,4 +1398,7 @@ a,
     .line {
         display: none;
     }
+    .footer-section-bottom {
+    padding-bottom: 20px;
+}
 }
