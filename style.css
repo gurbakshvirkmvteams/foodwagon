@@ -188,7 +188,7 @@ a,
     font-weight: var(--primary-font-weight);
     font-size: 18px;
     max-width: 120px;
-    color: #424242  ;
+    color: #424242;
 }
 
 .hero {
@@ -927,6 +927,11 @@ a,
     color: #ADADAD;
 }
 
+.footer-icons {
+    display: flex;
+    gap: 16px;
+}
+
 .footer-icons img {
     opacity: 60%;
 }
@@ -1401,7 +1406,8 @@ a,
     .line {
         display: none;
     }
+
     .footer-section-bottom {
-    padding-bottom: 20px;
-}
+        padding-bottom: 20px;
+    }
 }
